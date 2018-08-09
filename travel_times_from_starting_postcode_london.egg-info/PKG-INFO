@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: travel-times-from-starting-postcode-london
+Version: 0.0.1
+Summary: Heatmap showing approximate travel times across London from arbitrary starting point.
+Home-page: https://github.com/wbglaeser/travel-times-london.git
+Author: Glaeser
+Author-email: w.glaeser@lse.ac.uk
+License: UNKNOWN
+Description: # Travel times across London
+        
+        This package allows you to see approximate travel times across London from any given starting point. Pls note that at this point are limited to central London.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
