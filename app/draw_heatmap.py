@@ -101,10 +101,9 @@ df_prop['Transit_Times'] = df_prop['Transit_Times'].apply(lambda x: x/60)
 ########################################
 ### PREPARE DATA FOR MAP             ###
 ########################################
-df = pd.read_csv('dataset/final_data.csv')
-x = df.Lon
-y = df.Lat
-z = df.Transit_Times
+x = df_prop.Lon
+y = df_prop.Lat
+z = df_prop.Transit_Times
 ngridx = 50
 ngridy = 50
 
