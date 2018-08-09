@@ -26,8 +26,12 @@ df_STACK = df_STACK.reset_index()
 df_london = pd.read_csv('dataset/london_selection.csv')
 
 ########################################
-### SET EXAMPLE ZIP                  ###
+### SET ZIP                  ###
 ########################################
+# Select correct coordinates
+print('Type in the Postcode (Respect spaces please):')
+zip_code = input()
+
 # Obtain Coordinates for Start/Destination
 zip_ = list(df_london.Postcode)
 lat_ = list(df_london.Latitude)
@@ -35,10 +39,10 @@ lon_ = list(df_london.Longitude)
 zip_to_coos = dict(zip(zip_, zip(lat_, lon_)))
 zip_to_coos_ = dict(zip(zip_, zip(lon_,lat_)))
 
-# Select correct coordinates
-print('Type in the Postcode (Respect spaces please):')
-zip_code = input()
-example_coos = zip_to_coos_[zip_code]
+try:
+    example_coos = zip_to_coos_[zip_code]
+except KeyError:
+    sys.exit('Postcode lies outside covered area.')
 
 ########################################
 ### COMPUTE DISTANCES                ###
