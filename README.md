@@ -14,4 +14,6 @@ Then to create the heatmap around a postcode simple run (you might have to check
 python draw_heatmap.py
 ```
 
+![alt text](https://raw.githubusercontent.com/wbglaeser/travel-times-london/master/example/Figure_1.png)]
+
 
