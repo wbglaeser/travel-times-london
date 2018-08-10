@@ -57,7 +57,7 @@ df_STACK['Distance'] = df_dis[0]
 # Select closest points
 df_STACK = df_STACK.sort_values('Distance')
 df_close = df_STACK[df_STACK.Distance < 1000]
-print(len(df_close))
+print('The resulting heatmap is based on {} connections.'.format(len(df_close)))
 df_close.reset_index(inplace=True)
 
 ########################################
