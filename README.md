@@ -8,7 +8,7 @@ Go to the directory where you want to install the script and run:
 git clone https://github.com/wbglaeser/travel-times-london.git
 ```
 
-Then to create the heatmap around a postcode simple run (you might have to check that you have all necessary packages installed). 
+Then to create the heatmap around a postcode simply run (the script will prompt you for necessary input). 
 
 ```
 python draw_heatmap.py
