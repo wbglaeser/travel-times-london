@@ -14,6 +14,14 @@ Then to create the heatmap around a postcode simple run (you might have to check
 python draw_heatmap.py
 ```
 
+You need to make sure that you all necessary packages installed. Otherwise you need to download them, for example using the common pip installer. For example for the package geopy type in.
+
+```
+pip install geopy
+```
+
+The following picture shows an example heatmap for a postcode in North London.
+
 ![alt text](https://raw.githubusercontent.com/wbglaeser/travel-times-london/master/example/Figure_1.png)]
 
 
